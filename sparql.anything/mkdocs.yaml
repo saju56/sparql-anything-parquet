@@ -1,0 +1,35 @@
+site_name: SPARQL Anything
+site_url: http://sparql-anything.cc
+repo_url: https://github.com/SPARQL-Anything/sparql.anything
+repo_name: GitHub
+edit_uri: null
+site_description: SPARQL Anything online documentation
+theme:
+  name: readthedocs
+nav:
+  - Reference:
+    - Introduction: 'README.md'
+    - Configuration: 'Configuration.md'
+    - Functions: 'FUNCTIONS_AND_MAGIC_PROPERTIES.md'
+    - Docker: 'BROWSER.md'
+    - Tutorials: 'TUTORIALS.md'
+  - 'Guide on formats':
+      - CSV: 'formats/CSV.md'
+      - JSON: 'formats/JSON.md'
+      - XML: 'formats/XML.md'
+      - HTML: 'formats/HTML.md'
+      - YAML: 'formats/YAML.md'
+      - Markdown: 'formats/Markdown.md'
+      - Bibtex: 'formats/Bibtex.md'
+      - Binary: 'formats/Binary.md'
+      - Archive: 'formats/Archive.md'
+      - TXT: 'formats/TXT.md'
+      - RDF: 'formats/RDF_Files.md'
+      - Spreadsheet: 'formats/Spreadsheet.md'
+      - Word: 'formats/Word_Processing_Document.md'
+      - Slides: 'formats/Slides.md'
+extra_css: [styles.css]
+sticky_navigation: true
+markdown_extensions:
+  - tables
+  - admonition

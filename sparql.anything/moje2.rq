@@ -1,0 +1,14 @@
+PREFIX xyz: <http://sparql.xyz/facade-x/data/>
+PREFIX fx: <http://sparql.xyz/facade-x/ns/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?id ?name ?height
+WHERE {
+  SERVICE <x-sparql-anything:> {
+    fx:properties fx:location "out.parquet" .
+    ?s xyz:id ?id ;
+       xyz:name ?name ;
+       xyz:height_inches ?height .
+    FILTER (xsd:integer(?height) > 68)
+  }
+}
