@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix fx: <http://sparql.xyz/facade-x/ns/> .
+@prefix xyz: <http://sparql.xyz/facade-x/data/> .
+@prefix eg: <http://www.example.org/> .
+
+eg:document rdf:type fx:root ;
+    rdf:_1 <http://www.example.org/document#row1> ;
+    rdf:_2 <http://www.example.org/document#row2> ;
+    rdf:_3 <http://www.example.org/document#row3> ;
+    rdf:_4 <http://www.example.org/document#row4> .
+
+<http://www.example.org/document#row1>
+    xyz:Year "1997" ;
+    xyz:Make "Ford" ;
+    xyz:Model "E350" ;
+    xyz:Description "ac, abs, moon" ;
+    xyz:Price "3000.00" .
+
+<http://www.example.org/document#row2>
+    xyz:Year "1999" ;
+    xyz:Make "Chevy" ;
+    xyz:Model "Venture Extended Edition" ;
+    xyz:Description "" ;
+    xyz:Price "4900.00" .
+
+<http://www.example.org/document#row3>
+    xyz:Year "1999" ;
+    xyz:Make "Chevy" ;
+    xyz:Model "Venture Extended Edition, Very Large" ;
+    xyz:Price "5000.00" .
+
+<http://www.example.org/document#row4>
+    xyz:Year "1996" ;
+    xyz:Make "Jeep" ;
+    xyz:Model "Grand Cherokee" ;
+    xyz:Description "MUST SELL! air, moon roof, loaded" ;
+    xyz:Price "4799.00" .
